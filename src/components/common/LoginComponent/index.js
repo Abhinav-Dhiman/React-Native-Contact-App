@@ -38,7 +38,7 @@ const LoginComponent = () => {
           secureTextEntry
         />
       </View>
-      <CustomButton primary title="Submit" />
+      <CustomButton secondary title="Submit" />
       <View style={styles.bottomWrapper}>
         <Text style={styles.bottomText}>Need a new Account ?</Text>
         <TouchableOpacity onPress={() => navigate(REGISTER)}>

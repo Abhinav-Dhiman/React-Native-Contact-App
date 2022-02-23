@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import {View, TextInput, Text} from 'react-native';
 import React, {useState} from 'react';
 import styles from './styles';
@@ -26,7 +27,7 @@ const Input = ({
   };
   return (
     <View style={styles.inputContainer}>
-      {label && <Text>{label}</Text>}
+      {label && <Text style={{color: 'black'}}>{label}</Text>}
       <View
         style={[
           styles.wrapper,
