@@ -1,11 +1,11 @@
 // Comment Added ...
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
-import Container from '../Container';
-import Input from '../Input';
-import CustomButton from '../CustomButton';
+import Container from '../common/Container';
+import Input from '../common/Input';
+import CustomButton from '../common/CustomButton';
 import styles from './styles';
-import {REGISTER} from '../../../constants/routeNames';
+import {REGISTER} from '../../constants/routeNames';
 import {useNavigation} from '@react-navigation/native';
 
 const LoginComponent = () => {
@@ -14,7 +14,7 @@ const LoginComponent = () => {
     // eslint-disable-next-line react-native/no-inline-styles
     <Container style1={{backgroundColor: 'white'}}>
       <Image
-        source={require('../../../assets/images/loginLogo.png')}
+        source={require('../../assets/images/loginLogo.png')}
         style={styles.logo}
         resizeMode="contain"
       />

@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginComponent from '../../components/common/LoginComponent';
+import LoginComponent from '../../components/LoginComponent';
 
 const Login = () => {
   //const [value, onChangeText] = useState('');

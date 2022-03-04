@@ -9,9 +9,9 @@ const CustomButton = ({
   danger,
   disabled,
   loading,
+  onPress,
   ...props
 }) => {
-  const onPress = () => {};
   const getBgColor = () => {
     if (disabled) {
       return colors.grey;
@@ -29,10 +29,10 @@ const CustomButton = ({
 
   return (
     <TouchableOpacity
-      {...props}
       disabled={disabled}
       style={[styles.button, {backgroundColor: getBgColor()}]}
-      onPress={onPress}>
+      onPress={onPress}
+      {...props}>
       <View style={loading ? styles.loaderSection : null}>
         {loading && <ActivityIndicator color="white" />}
         {title && (

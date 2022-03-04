@@ -19,10 +19,14 @@ const Input = ({
     return icon && iconPosition === 'right' ? 'row-reverse' : 'row';
   };
   const getBorderColor = () => {
+    if (error) {
+      return colors.danger;
+    }
+
     if (focus) {
       return colors.primary;
     } else {
-      return error ? colors.danger : colors.grey;
+      return colors.grey;
     }
   };
   return (
