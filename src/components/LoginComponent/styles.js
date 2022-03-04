@@ -3,31 +3,31 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   logo: {
     alignSelf: 'center',
-    height: 200,
+    height: 160,
     width: 350,
     borderRadius: 10,
   },
   headerView: {
-    padding: 10,
-    marginTop: 5,
+    padding: 5,
+    marginTop: 2,
   },
   title: {
-    fontSize: 38,
+    fontSize: 37,
     textAlign: 'center',
     color: 'black',
     fontFamily: 'Monofett-Regular',
   },
   subtitle: {
-    backgroundColor: '#590051',
+    backgroundColor: '#4640CC',
     fontSize: 20,
     fontFamily: 'DarkerGrotesque-ExtraBold',
     marginTop: 20,
     color: 'white',
-    padding: 15,
+    padding: 6,
     borderRadius: 10,
   },
   textInputWrapper: {
-    marginBottom: 10,
+    marginVertical: 10,
   },
   demo: {
     flex: 1,
